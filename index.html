@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-size: 15px;
+      font-family: sans-serif;
+    }
+    body {
+      background-color: #e1f906;
+    }
+    header {
+      background-color: #181f1c;
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      color: white;
+      padding: 2rem;
+    }
+    section#table th,
+    td {
+      border: 1px solid black;
+      width: 10%;
+      text-align: center;
+    }
+    header h3 {
+      font-size: 2rem;
+      margin-left: 2px;
+    }
+    nav {
+      margin-left: auto;
+      display: flex;
+      gap: 1.5rem;
+    }
+    nav a {
+      color: #9ea93f;
+    }
+
+    main section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+    }
+    main {
+      margin-bottom: 5rem;
+    }
+
+    main section p {
+      font-size: 15px;
+    }
+    main section div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 50%;
+    }
+    main section h1,
+    h2,
+    li {
+      font-size: 1.5rem;
+    }
+    img {
+      object-fit: cover;
+    }
+
+    li {
+      font-size: medium;
+    }
+    section#homeworkout .row {
+      display: flex;
+      gap: 10rem;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    section#homeworkout .row .column {
+      width: 300px;
+      padding: 1rem;
+    }
+    section#homeworkout img {
+      height: 300px;
+      width: 300px;
+      object-fit: cover;
+    }
+
+    section#homeworkout {
+      font-size: 10px;
+      margin-bottom: 5rem;
+    }
+    section#homeworkout h1 {
+      font-size: 2rem;
+      text-align: center;
+    }
+
+    section#homeworkout {
+      margin: auto;
+    }
+
+    section#gymworkout h1 {
+      font-size: 2rem;
+      text-align: center;
+    }
+    section#gymworkout h2 {
+      font-size: 1.5rem;
+    }
+    section#gymworkout {
+      align-items: center;
+      align-content: center;
+      margin-left: 11rem;
+      margin-right: 11rem;
+    }
+
+    section#reminder p {
+      width: 50%;
+      padding-left: 1.5rem;
+      padding-bottom: 1rem;
+      font-size: 15px;
+      margin-left: 10rem;
+    }
+    .footer {
+      text-align: center;
+    }
+  </style>
+  <body>
+    <header>
+      <h3>Welcome to my first Portfolio, My name is Coach Terence!</h3>
+      <nav>
+        <a href="#homeworkout">Home Workout</a>
+        <a href="#gymworkout">Gym Workout</a>
+      </nav>
+    </header>
+    <main>
+      <section id="hero">
+        <div>
+          <p>
+            As a dedicated fitness enthusiast with a decade of experience
+            sculpting my own physique and mastering the intricacies of exercise
+            science, I am passionate about helping others embark on their own
+            transformative fitness journeys. With a deep understanding of
+            various training methodologies, nutrition principles, and the
+            psychology behind sustainable lifestyle changes, I am committed to
+            empowering individuals to achieve their ideal physique and unlock
+            their full potential
+          </p>
+
+          <p>
+            My approach to fitness is holistic, emphasizing the importance of
+            balance, consistency, and self-care. Whether you're aiming to build
+            lean muscle, shed unwanted body fat, or simply enhance your overall
+            well-being, I offer personalized guidance tailored to your unique
+            goals, preferences, and limitations.
+          </p>
+
+          <p>
+            Through one-on-one coaching, customized workout plans, and
+            nutritional counseling, I strive to educate and motivate my clients,
+            equipping them with the knowledge, tools, and mindset necessary for
+            long-term success. From setting realistic targets to overcoming
+            obstacles and celebrating milestones, I am dedicated to supporting
+            you every step of the way on your quest for optimal health and
+            vitality.
+          </p>
+
+          <p>
+            With a steadfast commitment to excellence and a genuine desire to
+            see others thrive, I am here to inspire, challenge, and guide you
+            toward realizing the best version of yourself—both inside and out.
+            Together, we'll unlock your true potential and redefine what's
+            possible in pursuit of your dream physique.
+          </p>
+        </div>
+        <img id="photo" src="./posin.jpg" height="500" />
+      </section>
+    </main>
+    <section id="homeworkout">
+      <h1 style="text-align: center">Home Workout</h1>
+      <div class="row">
+        <div class="column">
+          <img class="photo" src="push up.jpg" alt="" />
+          <h2>Upper Body</h2>
+          <table>
+            <ol>
+              <li>Push-ups - 3 sets of 10-15 reps</li>
+              <li>Single-arm dumbell rows - 3 sets of 10-12 reps per arm</li>
+              <li>Dumbell shoould press - 3 sets of 10-12 reps</li>
+              <li>Dumbell bicep curls - 3 sets of 10-12 reps</li>
+              <li>Bench dips - 3 sets of 10-15 reps</li>
+              <li>Plank - 3 sets of 30-60 seconds</li>
+            </ol>
+          </table>
+        </div>
+
+        <div class="column">
+          <img class="photo" src="squat.jpg" alt="" />
+          <h2>Lower Body</h2>
+          <ol>
+            <li>Squats - 3 sets of 10-15 reps</li>
+            <li>Split lunges - 3 sets of 10-12 reps</li>
+            <li>Glute Bridge - 3 sets of 10-12 reps</li>
+            <li>Dumbell Deadlifts - 3 sets of 10-12 reps</li>
+            <li>Calf raises - 3 sets of 10-15 reps</li>
+            <li>bicycle crunches - 3 sets of 15-20 reps</li>
+          </ol>
+        </div>
+
+        <div class="column">
+          <img class="photo" src="burpees.jpg" alt="" />
+          <h2>Full Body</h2>
+          <table>
+            <ol>
+              <li>Burpees - 3 sets of 10-15 reps</li>
+              <li>Dumbell chest press - 3 sets of 10-12 reps</li>
+              <li>Dumbell lunges - 3 sets of 10-12 reps per leg</li>
+              <li>Dumbell rows - 3 sets of 10-12 reps</li>
+              <li>Standing dumbell press - 3 sets of 10-12 reps</li>
+              <li>Russian twist - 3 sets of 15-20 reps</li>
+            </ol>
+          </table>
+        </div>
+      </div>
+    </section>
+    <section id="gymworkout">
+      <div>
+        <h1>Gym Workout</h1>
+        <table>
+          <h2>Monday - Chest and Triceps</h2>
+          <tr>
+            <th>Exercise</th>
+            <th>Sets</th>
+            <th>Reps</th>
+          </tr>
+          <tr>
+            <td>Dumbell Bench Press</td>
+            <td>4</td>
+            <td>8, 8, 6, 6</td>
+          </tr>
+          <tr>
+            <td>Incline Bench Press</td>
+            <td>4</td>
+            <td>8, 8, 6, 6</td>
+          </tr>
+          <tr>
+            <td>Cable Crossover</td>
+            <td>4</td>
+            <td>8, 8, 6, 6</td>
+          </tr>
+          <tr>
+            <td>Close Grip Bench Press</td>
+            <td>3</td>
+            <td>8, 8, 8</td>
+          </tr>
+          <tr>
+            <td>Lying Tricep Extension</td>
+            <td>3</td>
+            <td>8, 8, 8</td>
+          </tr>
+          <tr>
+            <td>Rope Pulldown</td>
+            <td>3</td>
+            <td>8, 8, 8</td>
+          </tr>
+        </table>
+        <table>
+          <h2>Wednesday - Back and Biceps</h2>
+          <tr>
+            <th>Exerice</th>
+            <th>Sets</th>
+            <th>Reps</th>
+          </tr>
+          <tr>
+            <td>Wide Grip Pull Up</td>
+            <td>4</td>
+            <td>8, 8, 8, 8</td>
+          </tr>
+          <tr>
+            <td>Close Grip Pull Down</td>
+            <td>4</td>
+            <td>8, 8, 8, 8</td>
+          </tr>
+          <tr>
+            <td>Cable Row</td>
+            <td>4</td>
+            <td>8, 8, 8, 8</td>
+          </tr>
+          <tr>
+            <td>Barbell Curl</td>
+            <td>3</td>
+            <td>8, 8, 8</td>
+          </tr>
+          <tr>
+            <td>Incline Bench Dumbell Curl</td>
+            <td>3</td>
+            <td>8, 8, 8</td>
+          </tr>
+          <tr>
+            <td>Dumbell Preacher Curl</td>
+            <td>3</td>
+            <td>8, 8, 8</td>
+          </tr>
+        </table>
+        <table>
+          <h2>Friday - Legs & Shoulders</h2>
+          <tr>
+            <th>Exercise</th>
+            <th>Sets</th>
+            <th>Reps</th>
+          </tr>
+          <tr>
+            <td>Squat</td>
+            <td>4</td>
+            <td>8, 8, 8, 8</td>
+          </tr>
+          <tr>
+            <td>Stiff Legged Deadlift</td>
+            <td>3</td>
+            <td>8, 8, 8,</td>
+          </tr>
+          <tr>
+            <td>Leg Curl</td>
+            <td>3</td>
+            <td>8, 8, 8</td>
+          </tr>
+          <tr>
+            <td>Leg Extension</td>
+            <td>3</td>
+            <td>8, 8, 8</td>
+          </tr>
+          <tr>
+            <td>Standing Calf Raise</td>
+            <td>4</td>
+            <td>15, 12, 10, 8</td>
+          </tr>
+          <tr>
+            <td>Military Press</td>
+            <td>4</td>
+            <td>8, 8, 8, 8</td>
+          </tr>
+          <tr>
+            <td>Dumbell Laterral Raise</td>
+            <td>3</td>
+            <td>12,12,12</td>
+          </tr>
+          <tr>
+            <td>Bent Over Reverse Fly</td>
+            <td>3</td>
+            <td>12, 12, 12</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+    <section id="reminder">
+      <div>
+        <p>
+          Remember to warm up before each workout by performing some dynamic
+          stretches or light cardio exercises. Additionally, adjust the weights
+          and repetitions based on your current strength and fitness level.
+          Focus on maintaining good form and gradually increase the intensity as
+          you progress.
+        </p>
+        <p>
+          Rest days are crucial for muscle recovery, so make sure to include
+          them in your routine. Proper nutrition and hydration are also
+          essential for achieving your goals, so be sure to fuel your body with
+          a balanced diet and stay hydrated throughout the day.
+        </p>
+        <p>
+          Lastly, listen to your body and modify the exercises or take
+          additional rest days if needed. It's important to prioritize safety
+          and avoid injury.
+        </p>
+      </div>
+    </section>
+    <footer class="footer">
+      <p>Contact info:</p>
+      <p>
+        Terence Tagayona<br />
+
+        <a href="mailto:terence.tagayona@gmail.com"
+          >terence.tagayona@gmail.com</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>
